@@ -1,0 +1,23 @@
+/* Menggunakan Tailwind CSS versi CDN lengkap dengan konfigurasi font */
+@import "https://cdn.tailwindcss.com";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Kustomisasi scrollbar halus */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
